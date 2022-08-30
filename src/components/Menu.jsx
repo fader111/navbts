@@ -1,24 +1,26 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-// import { Switch, Route, Redirect } from "react-router-dom";
 // import logo from './logo.svg';
 import '../App.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
+// import {LinkContainer} from 'react-router-bootstrap'
 
 function Menu() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">Дорожный контроллер</Navbar.Brand>
+        <Navbar.Brand href="/">Дорожный контроллер</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#main">Главная</Nav.Link>
-            <Nav.Link href="#logs">Логи</Nav.Link>
+            <Nav.Link as={Link} to="/" >Главная</Nav.Link>
+            <Nav.Link as={Link} to="/Table1">Логи</Nav.Link>
+            <Nav.Link as={Link} to="/Table2">Берлоги</Nav.Link>
             <NavDropdown title="Настройки" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Настройки</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
