@@ -11,7 +11,9 @@ export default function Login() {
     // render( 
     return (
         <>
-            <Button variant="secondary" onClick={handleShow} >
+            {/* <Button p-3 variant="secondary" onClick={handleShow} > */}
+            <Button className="float-end" variant="secondary" onClick={handleShow}>
+            {/* <Button className="ml-3" variant="secondary" onClick={handleShow} > */}
                 Войти
             </Button>
             <Modal show={show} onHide={handleClose}>

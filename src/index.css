@@ -60,7 +60,7 @@ body, html, .App, #root, .auth-wrapper {
 }
 .auth-wrapper h3 {
   text-align: center;
-  margin: 0;
+  margin: 30;
   line-height: 1;
   padding-bottom: 20px;
 }
@@ -77,4 +77,14 @@ body, html, .App, #root, .auth-wrapper {
 }
 .forgot-password a {
   color: #167bff;
+}
+.watch {
+  /* margin-right: 20px; */
+  margin: 0 20px 0 0; /*верх право низ лево */
+  color: #ffffff;
+}
+.date {
+  /* margin-right: 20px; */
+  /* margin: 0 15px 0 0; верх право низ лево */
+  color: #ffffff;
 }

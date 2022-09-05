@@ -11,7 +11,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
-import Table1 from "./components/Table1";
+import Logs from "./components/Logs";
 import Table2 from "./components/Table2";
 // import Grid1 from "./components/Grid_";
 import Login from './components/login.component'
@@ -25,7 +25,7 @@ const App = () => {
       {/* <Login /> */}
       <Routes>
         <Route exact path="/" element={<Home/>}  />
-        <Route exact path="/Table1" element={<Table1/>}  />
+        <Route exact path="/Logs" element={<Logs />}  />
         <Route exact path="/Table2" element={<Table2/>}  />
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
