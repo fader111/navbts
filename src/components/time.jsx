@@ -3,12 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import '../App.css';
 
-const Time = () => {
+const TimeShow = () => {
     let time = new Date().toLocaleTimeString();  // 17:10:31
-    let date = new Date().getDate(); // toLocaleTimeString();// .toLocaleTimeString();
-    // let time = new Date('2018-05-18T04:00:00Z').toUTCString();
-    // let time = new Date().toString();// toLocaleTimeString();// .toLocaleTimeString();
-  
     const [ctime, setTime] = useState(time);
   
     setInterval(() => {
@@ -29,4 +25,4 @@ const Time = () => {
     );
   };
   
-export default Time;
+export default TimeShow;

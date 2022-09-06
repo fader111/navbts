@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 import '../App.css';
 
-const Date_ = () => {
+const DateShow = () => {
     // let time = new Date().toLocaleTimeString();  // 17:10:31
     let newDate = new Date() // Mon Sep 05 2022 17:54:58 GMT+0300 (Москва, стандартное время)
     // let time = newDate.getDate(); //17:57:32
@@ -40,4 +40,4 @@ const Date_ = () => {
     );
   };
   
-export default Date_;
+export default DateShow;

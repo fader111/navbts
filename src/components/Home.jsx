@@ -16,7 +16,7 @@ const Home = () => {
           <Col >
             {/* <Table className="m-1" striped bordered hover> */}
             <div className="card">
-              <Card.Header as="h7" >Состояние</Card.Header>
+              <Card.Header >Состояние</Card.Header>
 
               <Table hover>
                 {/* <Table className="m-1" striped bordered hover> так криво сжимается */}
@@ -28,7 +28,7 @@ const Home = () => {
             </thead> */}
                 <tbody>
                   <tr>
-                    <td><b>Уровень доступа</b></td>
+                    <td as ><b>Уровень доступа</b></td>
                     <td>Оператор</td>
                   </tr>
                   <tr>
