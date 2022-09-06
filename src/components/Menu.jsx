@@ -27,7 +27,7 @@ function Menu() {
               <Nav.Link as={Link} to="/Logs">Логи</Nav.Link>
               <Nav.Link as={Link} to="/GroupsCurr">Токи групп</Nav.Link>
               <NavDropdown title="Настройки" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Настройки</NavDropdown.Item>
+                {/* <NavDropdown.Item href="#action/3.1">Настройки</NavDropdown.Item> */}
                 <NavDropdown.Item href="#action/3.2">Доступ</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Ручное управление</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.4">Сеть</NavDropdown.Item>
