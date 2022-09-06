@@ -88,3 +88,15 @@ body, html, .App, #root, .auth-wrapper {
   /* margin: 0 15px 0 0; верх право низ лево */
   color: #ffffff;
 }
+.card{
+	/* height:38px; */
+	/* border: radius 20px 00px; */
+	margin-bottom:15px;
+	/* margin-bottom:8px; */
+}
+.addr{
+  /* padding-bottom:0px; */
+  text-indent: 5px;
+  /* height: 10px; */
+        /* padding-right: 40px; */
+}
