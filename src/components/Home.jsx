@@ -15,9 +15,8 @@ const Home = () => {
         <Row>
           <Col >
             {/* <Table className="m-1" striped bordered hover> */}
-            <div className="card">
-              <Card.Header >Состояние</Card.Header>
-
+            <Card border='light'>
+              <Card.Header style={{backgroundColor:"#e0e0e0"}}>Состояние</Card.Header>
               <Table hover>
                 {/* <Table className="m-1" striped bordered hover> так криво сжимается */}
                 {/* <Table triped bordered hover> */}
@@ -53,11 +52,11 @@ const Home = () => {
                   </tr>
                 </tbody>
               </Table>
-            </div>
+            </Card>
           </Col>
           <Col >
-            <div className="card">
-              <Card.Header>Настройки сети</Card.Header>
+          <Card border='light'>
+            <Card.Header style={{backgroundColor:"#e0e0e0"}}>Настройки сети</Card.Header>
               {/* <Table striped hover> */}
               <Table hover>
                 {/* <Table className="m-2" striped bordered> */}
@@ -93,7 +92,7 @@ const Home = () => {
                   </tr>
                 </tbody>
               </Table>
-            </div>
+            </Card>
           </Col>
         </Row>
       </Container>

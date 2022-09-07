@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Logs from "./components/Logs";
-import Table2 from "./components/Table2";
+import GroupsCurr from "./components/Currents";
 import Login from './components/login.component'
 import SignUp from './components/signup.component'
 // import Addr from './components/Address'
@@ -21,7 +21,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home/>}  />
         <Route exact path="/Logs" element={<Logs />}  />
-        <Route exact path="/Table2" element={<Table2/>}  />
+        <Route exact path="/GroupsCurr" element={<GroupsCurr/>}  />
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route exact path="/" element={<Login />} />
