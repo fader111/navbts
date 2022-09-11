@@ -46,7 +46,11 @@ export default function Login() {
                                     className="custom-control-input"
                                     id="customCheck1"
                                 />
-                                <label className="custom-control-label" htmlFor="customCheck1">
+                                <label 
+                                    className="custom-control-label" 
+                                    htmlFor="customCheck1"
+                                    style={{marginLeft:5}}
+                                >
                                     Запомнить меня
                                 </label>
                             </div>

@@ -16,15 +16,15 @@ const Home = () => {
           <Col >
             {/* <Table className="m-1" striped bordered hover> */}
             <Card border='light'>
-              <Card.Header style={{backgroundColor:"#e0e0e0"}}>Состояние</Card.Header>
+              <Card.Header style={{ backgroundColor: "#e0e0e0" }}>Состояние</Card.Header>
               <Table hover>
                 {/* <Table className="m-1" striped bordered hover> так криво сжимается */}
                 {/* <Table triped bordered hover> */}
                 {/* <thead>
-              <tr>
-                <th colSpan={2}>Состояние</th>
-              </tr>
-            </thead> */}
+                    <tr>
+                      <th colSpan={2}>Состояние</th>
+                    </tr>
+                  </thead> */}
                 <tbody>
                   <tr>
                     <td><b>Уровень доступа</b></td>
@@ -55,8 +55,8 @@ const Home = () => {
             </Card>
           </Col>
           <Col >
-          <Card border='light'>
-            <Card.Header style={{backgroundColor:"#e0e0e0"}}>Настройки сети</Card.Header>
+            <Card border='light'>
+              <Card.Header style={{ backgroundColor: "#e0e0e0" }}>Настройки сети</Card.Header>
               {/* <Table striped hover> */}
               <Table hover>
                 {/* <Table className="m-2" striped bordered> */}

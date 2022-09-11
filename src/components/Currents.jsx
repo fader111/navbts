@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
+import Table from 'react-bootstrap/Table';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
@@ -10,15 +11,7 @@ function Currents() {
     <>
       <Container >
         <Card border='light' style={{ marginTop: 10 }}>
-          {/* <Card border='light' > */}
-          {/* <div style={{ paddingTop: 15, paddingLeft:10 }}>
-            <InputGroup className="mb-3">
-              <InputGroup.Checkbox aria-label="Checkbox for following text input" />
-              <Form.Control aria-label="Text input with checkbox" />
-            </InputGroup>
-          </div> */}
-          <Form style={{ marginTop: 15, marginLeft: 15 }}>
-            {/* <div key={`inline-switch`} className="mb-3"> */}
+        <Form style={{ marginTop: 15, marginLeft: 15 }}>
             <div key={`inline-switch`} >
               <Form.Check
                 inline
@@ -56,7 +49,7 @@ function Currents() {
                   </Form.Label>
                   <Col
                     sm="4"
-                    style={{ paddingLeft: 0 }}
+                    style={{ paddingLeft: 0, paddingRight: 0, marginRight: 0 }}
                   >
                     {/* <Col> */}
                     <Form.Control type="Label" placeholder="Ток, мА" />
@@ -67,9 +60,44 @@ function Currents() {
           </Form>
 
         </Card>
-        <Card border='light' style={{ marginTop: 5, minHeight: 500 }}>
-          Токи групп
-        </Card>
+        <Card border='light' style={{ marginTop: 0, minHeight: 5000 }}>
+              <Card.Header style={{ backgroundColor: "#e0e0e0" }}>Токи групп</Card.Header>
+              <Table hover>
+                {/* <Table className="m-1" striped bordered hover> так криво сжимается */}
+                {/* <Table triped bordered hover> */}
+                {/* <thead>
+                    <tr>
+                      <th colSpan={2}>Состояние</th>
+                    </tr>
+                  </thead> */}
+                <tbody>
+                  <tr>
+                    <td><b>Уровень доступа</b></td>
+                    <td>Оператор</td>
+                  </tr>
+                  <tr>
+                    <td><b>Режим работы</b></td>
+                    <td>Календарный план</td>
+                  </tr>
+                  <tr>
+                    <td><b>Текущая фаза</b></td>
+                    <td>2/2</td>
+                  </tr>
+                  <tr>
+                    <td><b>Версия ПО</b></td>
+                    <td>1.1.3</td>
+                  </tr>
+                  <tr>
+                    <td><b>Режим ВПУ</b></td>
+                    <td>Разрешен</td>
+                  </tr>
+                  <tr>
+                    <td><b>Номер СО</b></td>
+                    <td>3080</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </Card>
 
       </Container>
     </>
