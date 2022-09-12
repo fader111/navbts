@@ -1,17 +1,19 @@
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
-import Col from 'react-bootstrap/Col';
+// import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-// import Map from './Map';
+// import Row from 'react-bootstrap/Row';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 function Currents() {
   return (
     <>
       <Container >
         <Card border='light' style={{ marginTop: 10 }}>
-          <Form style={{ marginTop: 15, marginLeft: 15 }}>
+          {/* <Form style={{ marginTop: 15, marginLeft: 15 }}> */}
+          {/* <Form style={{ margin:10}}> */}
+          <Form style={{ padding: 10 }}>
             <div key={`inline-switch`} >
               <Form.Check
                 inline
@@ -35,26 +37,34 @@ function Currents() {
                 type="switch"
                 id={`switch-3`}
               />
-              <Form.Check
-                inline
-                style={{ paddingLeft: 30 }}
-              >
-                <Form.Group
+              <Form.Check inline >
+                {/* <Form.Group
                   as={Row}
                   className="mb-2"
                   controlId="CurrLimitFine">
                   <Form.Label column sm="6">
-                    {/* <Form.Label > */}
                     Порог тока, мА
                   </Form.Label>
                   <Col
                     sm="4"
                     style={{ paddingLeft: 0, paddingRight: 0, marginRight: 0 }}
                   >
-                    {/* <Col> */}
                     <Form.Control type="Label" placeholder="Ток, мА" />
                   </Col>
-                </Form.Group>
+                </Form.Group> */}
+                {/* <InputGroup size="sm" style={{marginBottom:15}}> */}
+                <InputGroup
+                  size="sm"
+                  style={{ width: 180 }}
+                >
+                  <InputGroup.Text id="btnGroupAddon">Порог тока, мА</InputGroup.Text>
+                  <Form.Control
+                    type="text"
+                    placeholder="Ток, мА"
+                  // aria-label="Input group example"
+                  // aria-describedby="btnGroupAddon"
+                  />
+                </InputGroup>
               </Form.Check>
             </div>
           </Form>
@@ -77,15 +87,15 @@ function Currents() {
             <tbody>
               {Array.from({ length: 10 }).map((_, index) => (
                 <tr>
-                  <td key={index*10}><b>Группа {index + 1}</b></td>
-                  <td key={index*10+1}>0</td>
-                  <td key={index*10+2}>0</td>
-                  <td key={index*10+3}>0</td>
-                  <td key={index*10+4}>0</td>
-                  <td key={index*10+5}>0</td>
-                  <td key={index*10+6}>0</td>
-                  <td key={index*10+7}>0</td>
-                  <td key={index*10+8}>0</td>
+                  <td key={index * 10}><b>Группа {index + 1}</b></td>
+                  <td key={index * 10 + 1}>0</td>
+                  <td key={index * 10 + 2}>0</td>
+                  <td key={index * 10 + 3}>0</td>
+                  <td key={index * 10 + 4}>0</td>
+                  <td key={index * 10 + 5}>0</td>
+                  <td key={index * 10 + 6}>0</td>
+                  <td key={index * 10 + 7}>0</td>
+                  <td key={index * 10 + 8}>0</td>
                 </tr>
               ))}
             </tbody>

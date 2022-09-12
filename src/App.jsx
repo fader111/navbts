@@ -11,6 +11,7 @@ import GroupsCurr from "./components/Currents";
 import Login from './components/login.component'
 import SignUp from './components/signup.component'
 import Prob from './components/Prob'
+import Settings from './components/Settings'
 // import Addr from './components/Address'
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
         <Route exact path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/prob" element={<Prob />} />
+        <Route path="/Settings" element={<Settings />} />
         {/* <Redirect to="/" /> */}
       </Routes>
     </BrowserRouter>
