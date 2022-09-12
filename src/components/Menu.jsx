@@ -30,11 +30,11 @@ function Menu() {
                 {/* <NavDropdown.Item href="#action/3.1">Настройки</NavDropdown.Item> */}
                 <NavDropdown.Item as={Link} to="Prob">Доступ</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Ручное управление</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">Сеть</NavDropdown.Item>
+                {/* <NavDropdown.Item href="#action/3.4">Сеть</NavDropdown.Item> */}
                 <NavDropdown.Item href="#action/3.5">Детекторы</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.6">Входы</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.7">Язык</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.8">Оформление</NavDropdown.Item>
+                {/* <NavDropdown.Item href="#action/3.6">Входы</NavDropdown.Item> */}
+                {/* <NavDropdown.Item href="#action/3.7">Язык</NavDropdown.Item> */}
+                {/* <NavDropdown.Item href="#action/3.8">Оформление</NavDropdown.Item> */}
                 {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.9">
                 Separated link
