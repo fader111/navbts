@@ -11,7 +11,7 @@ function Currents() {
     <>
       <Container >
         <Card border='light' style={{ marginTop: 10 }}>
-        <Form style={{ marginTop: 15, marginLeft: 15 }}>
+          <Form style={{ marginTop: 15, marginLeft: 15 }}>
             <div key={`inline-switch`} >
               <Form.Check
                 inline
@@ -43,7 +43,7 @@ function Currents() {
                   as={Row}
                   className="mb-2"
                   controlId="CurrLimitFine">
-                  <Form.Label column sm="5">
+                  <Form.Label column sm="6">
                     {/* <Form.Label > */}
                     Порог тока, мА
                   </Form.Label>
@@ -60,45 +60,37 @@ function Currents() {
           </Form>
 
         </Card>
-        <Card border='light' style={{ marginTop: 0, minHeight: 5000 }}>
-              <Card.Header style={{ backgroundColor: "#e0e0e0" }}>Токи групп</Card.Header>
-              <Table hover>
-                {/* <Table className="m-1" striped bordered hover> так криво сжимается */}
-                {/* <Table triped bordered hover> */}
-                {/* <thead>
-                    <tr>
-                      <th colSpan={2}>Состояние</th>
-                    </tr>
-                  </thead> */}
-                <tbody>
-                  <tr>
-                    <td><b>Уровень доступа</b></td>
-                    <td>Оператор</td>
-                  </tr>
-                  <tr>
-                    <td><b>Режим работы</b></td>
-                    <td>Календарный план</td>
-                  </tr>
-                  <tr>
-                    <td><b>Текущая фаза</b></td>
-                    <td>2/2</td>
-                  </tr>
-                  <tr>
-                    <td><b>Версия ПО</b></td>
-                    <td>1.1.3</td>
-                  </tr>
-                  <tr>
-                    <td><b>Режим ВПУ</b></td>
-                    <td>Разрешен</td>
-                  </tr>
-                  <tr>
-                    <td><b>Номер СО</b></td>
-                    <td>3080</td>
-                  </tr>
-                </tbody>
-              </Table>
-            </Card>
-
+        <Card border='light' style={{ marginTop: 0, minHeight: 500 }}>
+          <Card.Header style={{ backgroundColor: "#e0e0e0" }}>Токи групп</Card.Header>
+          <Table hover bordered size="sm" striped="columns" responsive="sm">
+            {/* <Table className="m-1" striped bordered hover> так криво сжимается */}
+            {/* <Table triped bordered hover> */}
+            <thead>
+              <tr>
+                <th ></th>
+                <th colSpan={2}>Красный</th>
+                <th colSpan={2}>Желтый</th>
+                <th colSpan={2}>Зеленый</th>
+                <th colSpan={2}>Дополн.</th>
+              </tr>
+            </thead>
+            <tbody>
+              {Array.from({ length: 10 }).map((_, index) => (
+                <tr>
+                  <td key={index*10}><b>Группа {index + 1}</b></td>
+                  <td key={index*10+1}>0</td>
+                  <td key={index*10+2}>0</td>
+                  <td key={index*10+3}>0</td>
+                  <td key={index*10+4}>0</td>
+                  <td key={index*10+5}>0</td>
+                  <td key={index*10+6}>0</td>
+                  <td key={index*10+7}>0</td>
+                  <td key={index*10+8}>0</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
+        </Card>
       </Container>
     </>
   )
